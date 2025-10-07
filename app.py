@@ -309,13 +309,15 @@ login_manager.login_message_category = "warning"
 # Require authentication for all pages except login/register/static
 @app.before_request
 def require_login_for_site():
-    allowed = {"login", "register", "static", "home", "about", "contact"}
+    # Allow unauthenticated access only to login, register, and static files
+    allowed = {"login", "register", "static"}
     if request.endpoint and request.endpoint in allowed:
         return
     if request.endpoint is None:
         return
     if not current_user.is_authenticated:
         return redirect(url_for("login"))
+
 
 
 class User(UserMixin):
