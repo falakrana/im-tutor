@@ -8,11 +8,13 @@
         <div class="card-body">
           <h1 class="h3 mb-3 text-center text-success fw-bold">Student Registration</h1>
           <p class="text-center text-secondary mb-4">
-            Join <span class="text-success fw-semibold">Tutor Falak Rana</span> and start your learning journey today!
+            Join <span class="text-success fw-semibold">Tutor</span> and start your learning journey today!
           </p>
 
           <form method="POST" novalidate class="needs-validation" id="registerForm">
             <div class="row g-3">
+
+              <!-- Full Name -->
               <div class="col-md-6">
                 <label class="form-label fw-semibold" for="name">Full Name</label>
                 <input
@@ -27,6 +29,7 @@
                 <div class="invalid-feedback">Please enter your full name.</div>
               </div>
 
+              <!-- Email -->
               <div class="col-md-6">
                 <label class="form-label fw-semibold" for="email">Email</label>
                 <input
@@ -40,6 +43,23 @@
                 <div class="invalid-feedback">Please provide a valid email.</div>
               </div>
 
+              <!-- Contact Number -->
+              <div class="col-md-6">
+                <label class="form-label fw-semibold" for="contact">Contact Number</label>
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="contact"
+                  name="contact"
+                  pattern="[0-9]{10}"
+                  maxlength="10"
+                  required
+                  value="{{ form.contact if form else '' }}"
+                />
+                <div class="invalid-feedback">Please enter a valid 10-digit contact number.</div>
+              </div>
+
+              <!-- Year of Study -->
               <div class="col-md-6">
                 <label class="form-label fw-semibold" for="year">Year of Study</label>
                 <input
@@ -55,17 +75,19 @@
                 <div class="invalid-feedback">Please enter a year between 1 and 10.</div>
               </div>
 
+              <!-- Subject Interest -->
               <div class="col-md-6">
                 <label class="form-label fw-semibold" for="subject">Subject Interest</label>
                 <select class="form-select" id="subject" name="subject" required>
                   <option value="" {% if not form or not form.subject %}selected{% endif %} disabled>
                     Select a subject
                   </option>
-                  <option value="Python" {% if form and form.subject=='Python' %}selected{% endif %}>Python</option>
+                  <option value="Python" {% if form and form.subject=='Python' %}selected{% endif %}>Python for Data science and AI/ML</option>
                 </select>
                 <div class="invalid-feedback">Please choose a subject.</div>
               </div>
 
+              <!-- Password -->
               <div class="col-md-12">
                 <label class="form-label fw-semibold" for="password">Password</label>
                 <input
@@ -80,10 +102,12 @@
               </div>
             </div>
 
+            <!-- Submit Button -->
             <div class="mt-4 d-grid">
               <button type="submit" class="btn btn-primary btn-lg">Create Account</button>
             </div>
 
+            <!-- Login Link -->
             <div class="text-center mt-3">
               <span class="text-secondary">Already have an account?</span>
               <a href="{{ url_for('login') }}" class="text-success fw-semibold text-decoration-none">Login here</a>
