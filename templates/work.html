@@ -1,0 +1,327 @@
+{% extends "base.html" %}
+{% block title %}My Work · Tutor Falak Rana{% endblock %}
+{% block content %}
+  <!-- Projects Showcase Section -->
+  <section class="projects-showcase mb-5">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold mb-3">My <span class="highlight">Projects</span></h1>
+      <p class="lead text-muted">Explore my portfolio of programming projects and educational tools</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1: Disease Prediction using ML -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">Disease Prediction ML</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="ml-visualization">
+                <div class="ml-icon">🧠</div>
+                <div class="prediction-flow">
+                  <div class="flow-step">Data Input</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">ML Model</div>
+                  <div class="flow-arrow">→</div>
+                  <div class="flow-step">Prediction</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Disease Prediction using ML</h5>
+              <p class="project-description">Disease prediction using machine learning models with Flask framework for healthcare applications.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Healthcare</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/Disease-Prediction-using-ML.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Coursera QA App -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">Coursera QA Assistant</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="extension-interface">
+                <div class="extension-icon">🔌</div>
+                <div class="qa-flow">
+                  <div class="qa-step">Course Page</div>
+                  <div class="qa-arrow">↓</div>
+                  <div class="qa-step">AI Assistant</div>
+                  <div class="qa-arrow">↓</div>
+                  <div class="qa-step">Instant Answers</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Coursera-QA-App</h5>
+              <p class="project-description">Browser extension that helps learners get answers to their questions about Coursera course content directly from the course page.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">playwright-python</span>
+                <span class="tech-tag">gemini-1.5-flash</span>
+                <span class="tech-tag">RAG</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/coursera-qa-app.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3: Langchain Translator via GROQ -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">GROQ Translator</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="translation-interface">
+                <div class="lang-icon">🌐</div>
+                <div class="translation-flow">
+                  <div class="lang-text">English</div>
+                  <div class="trans-arrow">⚡</div>
+                  <div class="lang-text">Spanish</div>
+                </div>
+                <div class="speed-indicator">Sub-second</div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Langchain Translator via GROQ</h5>
+              <p class="project-description">High-performance translation API leveraging Gemma 2B via Groq's LPUs for sub-second translations, managed with LangChain and served via FastAPI.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">fastapi</span>
+                <span class="tech-tag">groq-lpu</span>
+                <span class="tech-tag">llm</span>
+                <span class="tech-tag">langchain</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/LangChainGROQTranslator.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 4: Crew-AI Content Writer Agent -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">CrewAI Writer</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="ai-agent-interface">
+                <div class="agent-icon">🤖</div>
+                <div class="agent-workflow">
+                  <div class="workflow-step">Research</div>
+                  <div class="workflow-step">Write</div>
+                  <div class="workflow-step">Publish</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Crew-AI-Content-Writer-Agent</h5>
+              <p class="project-description">Utilizes CrewAI to build a research and writing agent duo that automates content generation for trending topics using Google Gemini and Serper.dev.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">crew-ai</span>
+                <span class="tech-tag">ai-agent</span>
+                <span class="tech-tag">python</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/Crew-AI-ContentWriter-Agent.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5: Speech to Text Chatbot -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">Voice Assistant</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="voice-interface">
+                <div class="voice-icon">🎤</div>
+                <div class="voice-flow">
+                  <div class="voice-step">Listen</div>
+                  <div class="voice-arrow">→</div>
+                  <div class="voice-step">Process</div>
+                  <div class="voice-arrow">→</div>
+                  <div class="voice-step">Respond</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Speech to Text Chatbot Using Groq Llama3</h5>
+              <p class="project-description">Real-time voice assistant built using Flask, Groq's LLaMA 3 (70B) via langchain_groq, and speech recognition for interactive conversations.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">speech-recognition</span>
+                <span class="tech-tag">groq-api</span>
+                <span class="tech-tag">langchain</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/Crew-AI-ContentWriter-Agent.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6: Data Visualization Analysis -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">Data Viz Analysis</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="chart-placeholder">
+                <div class="chart-bar" style="height: 60%"></div>
+                <div class="chart-bar" style="height: 80%"></div>
+                <div class="chart-bar" style="height: 45%"></div>
+                <div class="chart-bar" style="height: 90%"></div>
+                <div class="chart-bar" style="height: 70%"></div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Data Visualization Analysis</h5>
+              <p class="project-description">Comprehensive data analysis and visualization projects using Python and Tableau with real-world datasets and interactive dashboards.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Tableau</span>
+                <span class="tech-tag">Visualization</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/Data-Analysis-Visualization.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 7: YouTube RAG Chrome Extension -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">YouTube RAG Extension</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="youtube-interface">
+                <div class="youtube-icon">📺</div>
+                <div class="rag-flow">
+                  <div class="rag-step">Video</div>
+                  <div class="rag-arrow">→</div>
+                  <div class="rag-step">Transcript</div>
+                  <div class="rag-arrow">→</div>
+                  <div class="rag-step">AI Q&A</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Youtube RAG chrome extension application</h5>
+              <p class="project-description">YouTube Q&A Chatbot extracts video transcripts, uses AI to answer questions, available as Chrome extension and web app with Gemini AI integration.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">FAISS DB</span>
+                <span class="tech-tag">gemini-1.5</span>
+                <span class="tech-tag">youtube-chatbot</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/youtube-video-qa-chrome-extension.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 8: Email composition using Google ADK -->
+      <div class="col-lg-4 col-md-6">
+        <div class="project-window">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">Email ADK Agent</div>
+          </div>
+          <div class="window-content">
+            <div class="project-preview">
+              <div class="email-interface">
+                <div class="email-icon">📧</div>
+                <div class="email-flow">
+                  <div class="email-step">Input</div>
+                  <div class="email-arrow">→</div>
+                  <div class="email-step">AI Agent</div>
+                  <div class="email-arrow">→</div>
+                  <div class="email-step">Structure</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-info">
+              <h5 class="project-title">Email composition using Google ADK</h5>
+              <p class="project-description">AI agent built using Google Agent Development Kit (ADK) that provides basic structure and composition assistance for emails.</p>
+              <div class="tech-stack">
+                <span class="tech-tag">agent Development kit</span>
+                <span class="tech-tag">ai agent</span>
+              </div>
+              <div class="project-links mt-3">
+                <a href="https://github.com/falakrana/Email-composition-Google_ADK.git" target="_blank" class="btn btn-sm btn-outline-primary">View Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+{% block title %}Home · Tutor Falak Rana{% endblock %}
+{% block content %}
+  <section class="hero reveal-up">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+          <h1 class="display-4 fw-bold mb-4">
+            <span class="highlight">Learn</span> to change the world.
+          </h1>
+          <p class="lead mb-5">
+            With empowering training programs designed to support the achievement of your programming goals. Master Python with clear explanations, hands-on practice, and structured learning tailored for success in data science, machine learning, and AI.
+          </p>
+          <div class="d-flex gap-3 justify-content-center flex-wrap">
+            <!-- <a href="{{ url_for('about') }}" class="btn btn-primary btn-lg">Learn More</a> -->
+            <a href = "#tutorConnect" class="btn btn-primary btn-lg">Learn More</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-outline-primary btn-lg">Get in touch!</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body text-center">
+              <h5 id = "tutorConnect" class="card-title mb-3">Connect with Your Tutor</h5>
+              <p class="text-muted mb-4">
+                Scan the QR code to start a conversation directly on WhatsApp to know more about the curriculum.
+              </p>
+              <img
+                src="{{ url_for('static', filename='img/whatsAppScanner.jpg') }}"
+                class="img-fluid rounded"
+                alt="WhatsApp QR code to chat with the tutor"
+                style="max-width: 200px;"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}

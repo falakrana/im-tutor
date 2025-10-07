@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+{% block title %}Contact · Tutor Falak Rana{% endblock %}
+{% block content %}
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="text-center mb-5">
+      <h1 class="display-5 fw-bold mb-3">Get in <span class="highlight">Touch</span></h1>
+      <p class="lead text-muted">Ready to start your programming journey? Let's connect and discuss how I can help you achieve your goals!</p>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body p-4">
+            <form method="POST" novalidate class="needs-validation" id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label class="form-label" for="name">Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    name="name"
+                    required
+                    value="{{ form.name if form else '' }}"
+                    placeholder="Your full name"
+                  />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="col-md-6">
+                  <label class="form-label" for="email">Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    required
+                    value="{{ form.email if form else '' }}"
+                    placeholder="your.email@example.com"
+                  />
+                  <div class="invalid-feedback">Please enter a valid email.</div>
+                </div>
+                <div class="col-12">
+                  <label class="form-label" for="message">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Tell me about your programming goals, questions, or how I can help you..."
+                  >{{ form.message if form else '' }}</textarea>
+                  <div class="invalid-feedback">Please write your message.</div>
+                </div>
+              </div>
+              <div class="mt-4 text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Contact Information -->
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8">
+        <div class="row g-4">
+          <div class="col-md-4 text-center">
+            <div class="contact-info">
+              <div class="contact-icon">📧</div>
+              <h6 class="mt-2">Email</h6>
+              <p class="text-muted small">Get in touch via email for detailed discussions</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="contact-info">
+              <div class="contact-icon">💬</div>
+              <h6 class="mt-2">WhatsApp</h6>
+              <p class="text-muted small">Quick questions and instant responses</p>
+            </div>
+          </div>
+          <div class="col-md-4 text-center">
+            <div class="contact-info">
+              <div class="contact-icon">📅</div>
+              <h6 class="mt-2">Schedule</h6>
+              <p class="text-muted small">Book a consultation session</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
